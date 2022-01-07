@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Countdown</title>
+
+<body class="container">
+  </head>
+  <header class="header-image">
+    <img src="./img/top-image.svg" alt="">
+  </header>
+  <main>
+    <div class="timer-container">
+      <h1 class="title">Ready to launch in...</h1>
+      <ul clss="list">
+        <li>Dias</li>
+        <li>Horas</li>
+        <li>Minutos</li>
+        <li>Segundos</li>
+      </ul>
+      <div class="timer">
+        <p id="timer"></p>
+      </div>
+      <p>Inscreva-se para saber mais sobre o lançamento</p>
+      <button class="butonSubmit" type="button">Inscreva-se</button>
+    </div>
+    <div class="img-container">
+      <img src="./img/rocket.svg" alt="">
+    </div>
+  </main>
+  <div class="modal">
+    <div class="modal-wrapper">
+      <h1>Cadastre-se</h1>
+      <label class="modal-form" for="form-input">
+        <input type="text" id="input-name" placeholder="Nome" required>
+        <input type="email" id="email-input" placeholder="email" required>
+        <input type="number" id="tel-input" placeholder="+55 (11) 99999-9999" required>
+      </label>
+      <div class="button-form">
+        <button id="form-input" class="button">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="./img/bottom-image.svg" alt="">
+  </footer>
+
+
+  <script src="../src/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+header img{
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-container h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.timer-container ul {
+  display: flex;
+}
+
+.timer-container ul li + li {
+  margin-left: 82px;
+}
+
+.timer-container ul li {
+  list-style: none;
+  margin-top: 19px;
+  color: var(--light-grey);
+}
+
+.timer-container  {
+  list-style: none;
+  margin-top: 19px;
+  color: var(--light-grey);
+}
+
+.timer {
+  width: 550px;  
+}
+
+#timer {
+  text-align: left;
+  font-weight: 500;
+  font-size: 88px;
+  color: var(--black)
+}
+
+.butonSubmit {
+  width: 160px;
+  height: 46px;
+  margin-top: 31px;
+  border: none ;
+  font-size: 21px;
+  letter-spacing: 1px;
+  background: var(--purple);
+  border-radius: 8px;
+  color: #fff;
+  text-align:center;
+  cursor: pointer;
+
+  transition: filter 0.5s;
+}
+
+.butonSubmit:hover {
+  filter: brightness(0.8);
+}
+
+footer img {
+  position: absolute;
+  width: 100vw;
+  
+  bottom: 0px;
+  left: 0;
+  
+}
+
+.modal.active {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.modal-wrapper {
+  position: fixed;
+  background: rgb(240, 240, 240);
+  width:30%;
+  height: 50%;
+  border-radius: 25px;
+  z-index: 10;
+  left: 40%;
+  top: 20%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.active .modal-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper h1 {
+ text-align: center;
+ color: var(--purple);
+ padding-top: 20px;
+}
+
+.modal-wrapper label {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 50px;  
+  padding: 40px;
+  
+}
+
+.modal-form input {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none
+}
+
+.modal-form input::placeholder {
+  position: relative;
+  font-size: 18px;
+  left: 10px;
+}
+
+.button-form {
+display: flex;
+justify-content: center;
+margin-bottom: 20px
+}
+
+
+.button {
+  background-color: var(--purple);
+  color: #FFF;
+  font-size: 18px;
+  width: 50%;
+  height:50px;
+  border-radius:5px;
+  border:none;
+  cursor: pointer;
+
+  
+  transition: filter 0.5s;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+}
